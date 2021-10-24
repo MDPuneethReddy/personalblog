@@ -1,4 +1,4 @@
-import { Form, Input, InputNumber, Button } from 'antd';
+import { Form, Input, Button, notification } from 'antd';
 
 const layout = {
   labelCol: { span: 8 },
@@ -17,13 +17,43 @@ const validateMessages = {
   },
 };
 const contact=()=>{
+    const [form] = Form.useForm();
+    const openNotificationWithIcon = (type:string) => {
+        if(type=== 'success'){
+        notification[type]({
+          message: 'success',
+          description:
+            'Message sent successfully',
+        })
+
+    }
+        else if(type==='error'){
+            notification[type]({
+                message: 'error',
+                description:
+                  'Message not sent',
+              })}
+        }
     const onFinish = (values: any) => {
-        console.log(values);
+        const options={
+            method:"POST",
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+              },
+              body: JSON.stringify(values)
+        }
+        fetch("http://localhost:3000/api/email",options)
+        .then(response=>{
+            openNotificationWithIcon('success')
+            form.resetFields();
+        }).catch(error=>{
+            openNotificationWithIcon('error')
+        })
       };
 return(
     <div className="contact-form">
         <h1 style={{textAlign:"center"}}>Contact Us </h1>
-        <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+        <Form {...layout} name="nest-messages" form={form} onFinish={onFinish} validateMessages={validateMessages}>
       <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
         <Input />
       </Form.Item>
