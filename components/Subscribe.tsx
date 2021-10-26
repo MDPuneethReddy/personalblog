@@ -1,8 +1,31 @@
-import { Modal,Button, Form, Input} from "antd";
+import { Modal,Button, Form, Input, notification} from "antd";
+import {SmileTwoTone } from "@ant-design/icons"
 import { useState } from "react";
 const Subscribe=()=>{
+  const [success,setSuccess]=useState<boolean>(false)
+  const [form] = Form.useForm();
     const onFinish = (values: any) => {
         console.log(values);
+        const options={
+            method:"POST",
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+              },
+              body: JSON.stringify({name,email:values.user.email})
+        }
+        fetch("http://localhost:3000/api/subscribe",options)
+        .then(response=>{
+          console.log(response)
+            setSuccess(true)
+            form.resetFields();
+        }).catch(error=>{
+            notification['error']({
+          message: 'success',
+          description:
+            'something went wrong, please write us',
+        })
+        })
+         
       };
       const validateMessages = {
         required: '${label} is required!',
@@ -17,6 +40,7 @@ const Subscribe=()=>{
   };
 
   const handleCancel = () => {
+    setSuccess(false) 
     setIsModalVisible(false);
   };
     return(
@@ -25,7 +49,14 @@ const Subscribe=()=>{
         Subscribe for Free
       </Button>
       <Modal title="Get Free Updates In Your Inbox" visible={isModalVisible}  onCancel={handleCancel} footer={null}>
-      <Form  name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+      <Form form={form} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+      <Form.Item
+        label="Name"
+        name="name"
+        rules={[{ required: true, message: 'Please input your username!' }]}
+      >
+        <Input placeholder="Enter the first name" />
+      </Form.Item>
       <Form.Item name={['user', 'email']} label="Email" rules={[{ type: 'email',required:true }]} >
         <Input placeholder="Enter the email address" />
       </Form.Item>
@@ -35,6 +66,9 @@ const Subscribe=()=>{
         </Button>
       </Form.Item>
       </Form>
+      {success &&
+       <p style={{textAlign:"center"}}><SmileTwoTone /> SUCCESS! ThankYou for Subscribing</p>
+      }
       </Modal>
         </div>
     )
