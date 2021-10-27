@@ -17,7 +17,7 @@ const Post:React.FC<Iprops>=(props:Iprops )=> {
     console.log(props)
   return (
     <div className='card'>
-      <img  src={props.post.frontmatter.cover_image} alt='' />
+      <img className="post-image" src={props.post.frontmatter.cover_image} alt='' />
 
       <div className='post-date' >
         <CalendarOutlined />{props.post.frontmatter.date}

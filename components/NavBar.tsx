@@ -19,11 +19,6 @@ return(
                 <a href="/">Home</a>
               </Menu.Item>
               <Menu.Item
-                key="About"
-              >
-                <a href="/about">About</a>
-              </Menu.Item>
-              <Menu.Item
                 key="contact"
               >
                 <a href="/contact">Contact Us</a>
