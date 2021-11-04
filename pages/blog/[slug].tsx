@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import { getReadTime } from '../../utils'
+import axios from 'axios'
 interface Iprops{
     frontmatter:{
         title:string,
@@ -27,14 +28,17 @@ export const PostPage:React.FC<Iprops>=(props:Iprops)=> {
     </>
   )
 }
-
+const getPathsData=async()=>{
+  let paths:Array<any>=[]
+  await axios.get("http://localhost:3000/api/blogposts/paths").then(response=>{
+    paths=response.data.payload
+  }).catch(error=>{
+    console.log(error)
+  })
+  return paths
+}
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('posts'))
-  const paths = files.map((filename) => ({
-    params: {
-      slug: filename.replace('.md', ''),
-    },
-  }))
+  const paths=await getPathsData()
   return {
     paths,
     fallback: false,

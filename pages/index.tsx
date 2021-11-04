@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
 import { sortByDate } from '../utils'
 import Post from "../components/Post"
+import axios from 'axios'
 interface Iprops{
   posts:any
 }
@@ -24,29 +22,20 @@ const Home: NextPage<Iprops> = (props:Iprops) => {
     </div>
   )
 }
-export async function getStaticProps() {
-  // Get files from the posts dir
-  const files = fs.readdirSync(path.join('posts'))
-
-  // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
-    // Create slug
-    const slug = filename.replace('.md', '')
-
-    // Get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
-      'utf-8'
-    )
-
-    const { data: frontmatter } = matter(markdownWithMeta)
-    console.log(frontmatter)
-    return {
-      slug,
-      frontmatter,
-    }
+const getData=async()=>{
+  let posts:Array<any>=[]
+  await axios.get("http://localhost:3000/api/blogposts").then((response:any)=>{
+    posts=response.data.payload
   })
-
+  .catch(error=>{
+    console.log(error)
+  })
+  return posts
+}
+export const getStaticProps=async()=> {
+  // Get files from the posts dir
+  const posts=await getData()
+  
   return {
     props: {
       posts: posts.sort(sortByDate),
