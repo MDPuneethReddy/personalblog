@@ -14,7 +14,6 @@ interface Iprops{
     }
 }
 const Post:React.FC<Iprops>=(props:Iprops )=> {
-    console.log(props)
   return (
     <div className='card'>
       <img className="post-image" src={props.post.frontmatter.cover_image} alt='' />

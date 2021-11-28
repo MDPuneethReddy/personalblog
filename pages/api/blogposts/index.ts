@@ -7,6 +7,5 @@ export default async function handler (
   res: NextApiResponse
 ) {
   const {posts}=await getAllPosts()
-  console.log("posts",posts)
   res.status(200).json({payload:posts})
 }

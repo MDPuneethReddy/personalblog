@@ -5,7 +5,6 @@ const Subscribe=()=>{
   const [success,setSuccess]=useState<boolean>(false)
   const [form] = Form.useForm();
     const onFinish = (values: any) => {
-        console.log(values);
         const options={
             method:"POST",
             headers: {
@@ -15,7 +14,6 @@ const Subscribe=()=>{
         }
         fetch("http://localhost:3000/api/subscribe",options)
         .then(response=>{
-          console.log(response)
             setSuccess(true)
             form.resetFields();
         }).catch(error=>{

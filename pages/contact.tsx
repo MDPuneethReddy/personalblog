@@ -44,8 +44,13 @@ const contact=()=>{
         }
         fetch("http://localhost:3000/api/email",options)
         .then(response=>{
+          if(response.status===200){
             openNotificationWithIcon('success')
             form.resetFields();
+          }
+          else{
+            openNotificationWithIcon('error')
+          }
         }).catch(error=>{
             openNotificationWithIcon('error')
         })

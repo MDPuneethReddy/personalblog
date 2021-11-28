@@ -27,6 +27,7 @@ export default function handler(
   };
   transporter.sendMail(mailOptions,  (err, info)=> {
     if(err){
+      console.log(err)
       res.status(400).json({error:"Message not sent"})
     }
     else{
