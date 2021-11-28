@@ -24,7 +24,7 @@ const Home: NextPage<Iprops> = (props:Iprops) => {
 }
 const getData=async()=>{
   let posts:Array<any>=[]
-  await axios.get("http://localhost:3000/api/blogposts").then((response:any)=>{
+  await axios.get("/api/blogposts").then((response:any)=>{
     posts=response.data.payload
   })
   .catch(error=>{

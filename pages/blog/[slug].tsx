@@ -30,7 +30,7 @@ export const PostPage:React.FC<Iprops>=(props:Iprops)=> {
 }
 const getPathsData=async()=>{
   let paths:Array<any>=[]
-  await axios.get("http://localhost:3000/api/blogposts/paths").then(response=>{
+  await axios.get("/api/blogposts/paths").then(response=>{
     paths=response.data.payload
   }).catch(error=>{
     console.log(error)

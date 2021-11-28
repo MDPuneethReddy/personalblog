@@ -42,7 +42,7 @@ const contact=()=>{
               },
               body: JSON.stringify(values)
         }
-        fetch("http://localhost:3000/api/email",options)
+        fetch("/api/email",options)
         .then(response=>{
           if(response.status===200){
             openNotificationWithIcon('success')

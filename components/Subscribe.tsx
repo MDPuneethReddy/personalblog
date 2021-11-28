@@ -12,7 +12,7 @@ const Subscribe=()=>{
               },
               body: JSON.stringify({name,email:values.user.email})
         }
-        fetch("http://localhost:3000/api/subscribe",options)
+        fetch("/api/subscribe",options)
         .then(response=>{
             setSuccess(true)
             form.resetFields();
