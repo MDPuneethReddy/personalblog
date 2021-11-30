@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import marked from 'marked'
 import { getReadTime } from '../../utils'
 import axios from 'axios'
+import { getAllPostsPaths } from '../api/blogposts/utils'
 interface Iprops{
     frontmatter:{
         title:string,
@@ -28,17 +29,17 @@ export const PostPage:React.FC<Iprops>=(props:Iprops)=> {
     </>
   )
 }
-const getPathsData=async()=>{
-  let paths:Array<any>=[]
-  await axios.get("/api/blogposts/paths").then(response=>{
-    paths=response.data.payload
-  }).catch(error=>{
-    console.log(error)
-  })
-  return paths
-}
+// const getPathsData=async()=>{
+//   let paths:Array<any>=[]
+//   await axios.get("/api/blogposts/paths").then(response=>{
+//     paths=response.data.payload
+//   }).catch(error=>{
+//     console.log(error)
+//   })
+//   return paths
+// }
 export async function getStaticPaths() {
-  const paths=await getPathsData()
+  const paths=await getAllPostsPaths()
   return {
     paths,
     fallback: false,
