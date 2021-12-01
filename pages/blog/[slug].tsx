@@ -3,22 +3,43 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import { getReadTime } from '../../utils'
-import axios from 'axios'
+import Head from "next/head";
 import { getAllPostsPaths } from '../api/blogposts/utils'
+import { useEffect } from 'react'
+import * as gtag   from '../../lib/gtag'
 interface Iprops{
     frontmatter:{
         title:string,
         date:string,
-        coverImage:string
+        coverImage:string,
+        excerpt:string,
+        tags:any
     },
     slug:string,
     content:any,
     readtime:any
 }
 export const PostPage:React.FC<Iprops>=(props:Iprops)=> {
+  useEffect(() => {
+    gtag.event({
+      action:"Visit",
+      category:"blog",
+      label:props.slug,
+      value:props.frontmatter.title
+    })
+  }, [])
   return (
     <>
       <div className='card card-page'>
+      <Head>
+        <title>{props.frontmatter.title}</title>
+        <meta name="keywords" content={props.frontmatter.tags.toString()} />
+        <meta name="author" content="M D PUNEETH REDDY" />
+        <meta
+          name={props.frontmatter.title}
+          content={props.frontmatter.excerpt}
+        />
+      </Head>
         <h1 className='post-title'>{props.frontmatter.title}</h1>
         <div className='post-date'>Posted on {props.frontmatter.date}</div>
         <img src={props.frontmatter.coverImage} alt='' />
