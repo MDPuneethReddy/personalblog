@@ -36,3 +36,29 @@ export const getAllPostsPaths=async()=>{
   }))
   return paths
 }
+
+export const getPostsByCategory=async(category:string)=>{
+  const files = fs.readdirSync(path.join('posts'))
+
+  // Get slug and frontmatter from posts
+  const posts = files.map((filename) => {
+    // Create slug
+    const slug = filename.replace('.md', '')
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join('posts', filename),
+      'utf-8'
+    )
+
+    const { data: frontmatter } = matter(markdownWithMeta)
+    return {
+      slug,
+      frontmatter,
+    }
+  }).filter(post=>post.frontmatter.tags.includes(category))
+
+  return {
+      posts: posts.sort(sortByDate)
+  }
+}

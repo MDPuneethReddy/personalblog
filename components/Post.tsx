@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Button } from 'antd'
 import {CalendarOutlined,RightCircleOutlined } from "@ant-design/icons"
+import { useRouter } from 'next/router'
 interface Iprops{
     post:{
         frontmatter:{
@@ -14,6 +15,10 @@ interface Iprops{
     }
 }
 const Post:React.FC<Iprops>=(props:Iprops )=> {
+  const router = useRouter()
+  const goToCatgeoryPage=(category:string)=>{
+    router.push({pathname:"/blog/category",query:{category}})
+  }
   return (
     <div className='card'>
       <img className="post-image" src={props.post.frontmatter.cover_image} alt='' />
@@ -25,7 +30,7 @@ const Post:React.FC<Iprops>=(props:Iprops )=> {
       <h3 className="post-title">{props.post.frontmatter.title}</h3>
       {props.post.frontmatter.tags.map((tag:string,index:number)=>{
           return(
-            <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}}>{tag}</Button>
+            <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}} onClick={()=>goToCatgeoryPage(tag)}>{tag}</Button>
           )
       })}
       <p>{props.post.frontmatter.excerpt}</p>
