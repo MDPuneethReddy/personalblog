@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { sortByDate } from '../../../utils'
+import getConfig from 'next/config'
 export const getAllPosts=async()=>{
     const files = fs.readdirSync(path.join('posts'))
 
@@ -38,7 +39,9 @@ export const getAllPostsPaths=async()=>{
 }
 
 export const getPostsByCategory=async(category:string)=>{
-  const files = fs.readdirSync(path.join('posts'))
+  const temppath=path.join(getConfig().serverRuntimeConfig.PROJECT_ROOT, "posts")
+  console.log(temppath)
+  const files = fs.readdirSync(temppath)
 
   // Get slug and frontmatter from posts
   const posts = files.map((filename) => {
