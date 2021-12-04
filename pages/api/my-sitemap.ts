@@ -1,5 +1,5 @@
-import { getAllPosts } from "./blogposts/utils";
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { getAllPosts } from '../../lib/posts';
 
 const { SitemapStream, streamToPromise } = require("sitemap");
 const { Readable } = require("stream");

@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { sortByDate } from '../utils'
 import Post from "../components/Post"
-import { getAllPosts } from './api/blogposts/utils'
+import { getAllPosts, sortByDate } from '../lib/posts'
 interface Iprops{
   posts:any
 }
@@ -22,16 +21,7 @@ const Home: NextPage<Iprops> = (props:Iprops) => {
     </div>
   )
 }
-// const getData=async()=>{
-//   let posts:Array<any>=[]
-//   await axios.get("/api/blogposts").then((response:any)=>{
-//     posts=response.data.payload
-//   })
-//   .catch(error=>{
-//     console.log(error)
-//   })
-//   return posts
-// }
+
 export const getStaticProps=async()=> {
   // Get files from the posts dir
   const {posts}=await getAllPosts()
