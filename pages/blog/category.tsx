@@ -12,25 +12,25 @@ interface Iprops{
   return (
     <div>
 
-       <Head>
+       {/* <Head>
        <title>{props.category}</title>
       </Head>
       <div className='posts'>
         {props.posts.map((post:any, index:number) => (
           <Post key={index} post={post} />
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
-export const getServerSideProps=async(context:any)=> {
-  const {category} = context.query
-  const {posts}=await getPostsByCategory(category)
-  return {
-    props: {
-      posts: posts.sort(sortByDate),
-      category
-    },
-  }
-}
+// export const getServerSideProps=async(context:any)=> {
+//   const {category} = context.query
+//   const {posts}=await getPostsByCategory(category)
+//   return {
+//     props: {
+//       posts: posts.sort(sortByDate),
+//       category
+//     },
+//   }
+// }
 export default Category
