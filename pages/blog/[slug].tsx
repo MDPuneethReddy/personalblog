@@ -2,11 +2,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
-import { getReadTime } from '../../utils'
 import Head from "next/head";
-import { getAllPostsPaths } from '../api/blogposts/utils'
 import { useEffect } from 'react'
 import * as gtag   from '../../lib/gtag'
+import { getAllPostsPaths, getReadTime, postsDirectory } from '../../lib/posts';
 interface Iprops{
     frontmatter:{
         title:string,
@@ -50,15 +49,7 @@ export const PostPage:React.FC<Iprops>=(props:Iprops)=> {
     </>
   )
 }
-// const getPathsData=async()=>{
-//   let paths:Array<any>=[]
-//   await axios.get("/api/blogposts/paths").then(response=>{
-//     paths=response.data.payload
-//   }).catch(error=>{
-//     console.log(error)
-//   })
-//   return paths
-// }
+
 export async function getStaticPaths() {
   const paths=await getAllPostsPaths()
   return {
@@ -70,7 +61,7 @@ export async function getStaticPaths() {
 export const getStaticProps=( slug:any  )=> {
     const actualslug=slug.params.slug
   const markdownWithMeta = fs.readFileSync(
-    path.join('posts', actualslug + '.md'),
+    path.join(postsDirectory, actualslug + '.md'),
     'utf-8'
   )
 
