@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import {getAllPostsPaths} from "../utils"
+import { getAllPostsPaths } from '../../../../lib/posts'
+
 export default async function handler (
   req: NextApiRequest,
   res: NextApiResponse
