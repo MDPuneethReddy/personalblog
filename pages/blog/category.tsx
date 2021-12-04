@@ -22,8 +22,8 @@ interface Iprops{
     </div>
   )
 }
-export const getServerSideProps=async({query}:any)=> {
-  const {category} = query
+export const getServerSideProps=async(context:any)=> {
+  const {category} = context.query
   const {posts}=await getPostsByCategory(category)
   return {
     props: {
