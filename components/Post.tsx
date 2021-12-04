@@ -30,7 +30,10 @@ const Post:React.FC<Iprops>=(props:Iprops )=> {
       <h3 className="post-title">{props.post.frontmatter.title}</h3>
       {props.post.frontmatter.tags.map((tag:string,index:number)=>{
           return(
-            <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}} onClick={()=>goToCatgeoryPage(tag)}>{tag}</Button>
+            <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}} 
+            // onClick={()=>goToCatgeoryPage(tag)}
+            >
+              {tag}</Button>
           )
       })}
       <p>{props.post.frontmatter.excerpt}</p>
