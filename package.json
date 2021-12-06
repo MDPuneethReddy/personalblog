@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build":"next build",
-"export": "next export",
-"deploy": "yarn build && yarn export"
+    "build": "next build",
+    "genblogpost": "node bin/generatePost.js"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
