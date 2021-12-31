@@ -27,7 +27,7 @@ const Post:React.FC<Iprops>=(props:Iprops )=> {
         <CalendarOutlined />{props.post.frontmatter.date}
       
 
-      <h3 className="post-title">{props.post.frontmatter.title}</h3>
+      <h3 className="post-title">{props.post.frontmatter.title.toUpperCase()}</h3>
       {props.post.frontmatter.tags.map((tag:string,index:number)=>{
           return(
             <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}} 
