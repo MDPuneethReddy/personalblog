@@ -1,14 +1,11 @@
 ---
-title: 'Django Crash Course'
-date: 'March 5, 2021'
-excerpt: 'Django is a very powerful, high level Python framework for building web applications'
+title: 'Coinmarketcap: Beginner Guide to crypto market using coinmarketcap'
+date: 'December 31, 2021'
+excerpt: 'coinmarketcap '
 cover_image: '/images/posts/img1.jpeg'
-tags: ["nodejs","reactjs"]
+tags: ["coinmarketcap","crypto"]
 ---
+When you are entering into the crypto world, you might be wondering where to start, which resource you can trust or follow.Here comes coinmarketcap, which is the most trusted website among the crypto community. In this article we will see all the features of coinmarketcap can offer.
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+The frontpage of coinmarketcap will looks like this
+![Coinmarketcap](/images/posts/posts_1_coinmarketcap_1.png)
