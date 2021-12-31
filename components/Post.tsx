@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 interface Iprops{
     post:{
         frontmatter:{
-            cover_image:string,
             date:any,
             title:string,
             excerpt:string,
@@ -21,13 +20,9 @@ const Post:React.FC<Iprops>=(props:Iprops )=> {
   }
   return (
     <div className='card'>
-      <img className="post-image" src={props.post.frontmatter.cover_image} alt='' />
-
       <div className='post-date' >
         <CalendarOutlined />{props.post.frontmatter.date}
-      
-
-      <h3 className="post-title">{props.post.frontmatter.title.toUpperCase()}</h3>
+      <h3 className="post-title">{props.post.frontmatter.title}</h3>
       {props.post.frontmatter.tags.map((tag:string,index:number)=>{
           return(
             <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}} 

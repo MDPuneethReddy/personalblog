@@ -1,8 +1,7 @@
 ---
 title: 'Coinmarketcap: Beginner Guide to crypto market using coinmarketcap'
 date: 'December 31, 2021'
-excerpt: 'coinmarketcap '
-cover_image: '/images/posts/img1.jpeg'
+excerpt: 'The beginner Guide to coinmarketcap and to checkout the important features to start into crypto world '
 tags: ["coinmarketcap","crypto"]
 ---
 When you are entering into the crypto world, you might be wondering where to start, which resource you can trust or follow.Here comes coinmarketcap, which is the most trusted website among the crypto community. In this article we will see all the features of coinmarketcap can offer.
@@ -23,7 +22,7 @@ For Example we will check the details about the bitcoin
 <a style="color: blue" href="https://coinmarketcap.com/portfolio-tracker/" target="_blank">Create portfolio</a>
 ![Create portfolio](/images/posts/posts_1_coinmarketcap_4.png)
 
-There are more features which are offering by coinmarketcap, you ccan checkout their official page <a style="color: blue" href="https://coinmarketcap.com/" target="_blank">coinmarketcap</a>.
+There are more features which are offering by coinmarketcap, you can checkout their official page <a style="color: blue" href="https://coinmarketcap.com/" target="_blank">coinmarketcap</a>.
 
 If you like the content, please subscribe to the blog which is free of cost, to get the blog updates.
 
