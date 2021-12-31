@@ -26,7 +26,7 @@ const Post:React.FC<Iprops>=(props:Iprops )=> {
       {props.post.frontmatter.tags.map((tag:string,index:number)=>{
           return(
             <Button key={index} type="default" shape="round" size="small" style={{backgroundColor:'gold'}} 
-            onClick={()=>goToCatgeoryPage(tag)}
+            // onClick={()=>goToCatgeoryPage(tag)}
             >
               {tag}</Button>
           )
