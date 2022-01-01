@@ -6,7 +6,8 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "genblogpost": "node bin/generatePost.js"
+    "genblogpost": "node bin/generatePost.js",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -20,6 +21,7 @@
     "gray-matter": "^4.0.3",
     "marked": "^3.0.7",
     "next": "11.1.2",
+    "next-sitemap": "^1.6.203",
     "nodemailer": "^6.7.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
