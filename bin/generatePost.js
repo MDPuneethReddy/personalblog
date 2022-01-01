@@ -4,7 +4,6 @@
 */
 const fs = require("fs");
 const path = require("path");
-
 // Get paramas
 const params = process.argv.slice(2);
 // First param is the slug

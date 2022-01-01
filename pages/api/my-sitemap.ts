@@ -1,26 +1,24 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { getAllPosts } from '../../lib/posts';
-
+import { getDocs} from "@firebase/firestore";
+import { postsCollectionRef } from '../../components/firebase/tablesCollectionRef';
 const { SitemapStream, streamToPromise } = require("sitemap");
 const { Readable } = require("stream");
-
 export default async (req: NextApiRequest,
     res: NextApiResponse) => {
   try {
-    // An array with your links
-    const links:Array<any> = [];
-    (await getAllPosts()).posts.map((post) => {
-      links.push({
-        url: `/blog/${post.slug}`,
-        changefreq: "daily",
-        priority: 0.9,
-      });
+    let AllLinks:Array<any>=[]
+    const posts=await getDocs(postsCollectionRef) 
+  posts.docs.map((doc)=>{
+    AllLinks.push({
+      url: `/blog/${doc.data().name}`,
+      changefreq: "daily",
+      priority: 0.9,
     });
-
+  })
     // Add other pages
     const pages = [ "/contact", "/blog"];
     pages.map((url) => {
-      links.push({
+      AllLinks.push({
         url,
         changefreq: "daily",
         priority: 0.9,
@@ -37,7 +35,7 @@ export default async (req: NextApiRequest,
     });
 
     const xmlString = await streamToPromise(
-      Readable.from(links).pipe(stream)
+      Readable.from(AllLinks).pipe(stream)
     ).then((data:any) => data.toString());
 
     res.end(xmlString);
