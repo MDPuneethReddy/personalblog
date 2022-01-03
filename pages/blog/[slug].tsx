@@ -43,7 +43,7 @@ export const PostPage:React.FC<Iprops>=(props:Iprops)=> {
         <div className='post-date'>Posted on {props.frontmatter.date}</div>
         <img src={props.frontmatter.coverImage} alt='' />
         <div className='post-body'>
-          <div dangerouslySetInnerHTML={{ __html: marked(props.content) }}></div>
+          <div style={{fontSize:"20px"}} dangerouslySetInnerHTML={{ __html: marked(props.content) }}></div>
         </div>
       </div>
     </>

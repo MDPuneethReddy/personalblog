@@ -27,8 +27,6 @@ title: ""
 excerpt: ""
 tags:  ["tag1","tag2"]
 slug: "${slug}"
-coverImage: "cover.jpg"
-description: "<insert meta & og description here>"
 ---
 `;
 
