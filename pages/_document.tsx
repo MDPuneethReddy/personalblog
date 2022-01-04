@@ -7,6 +7,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7804121890092464" crossOrigin="anonymous"></script>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
