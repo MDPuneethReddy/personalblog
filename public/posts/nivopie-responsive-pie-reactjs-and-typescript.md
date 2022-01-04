@@ -19,7 +19,7 @@ yarn add @nivo/core @nivo/pie
 ```
 
 ### SAMPLE DATA NIVOPIE:
-Check out the official documentation  <a style="color: blue" href=" https://nivo.rocks/pie/ ">  https://nivo.rocks/pie/ </a>.
+Check out the official documentation  <a style="color: blue" href=" https://nivo.rocks/pie/ " target="_blank">  https://nivo.rocks/pie/ </a>.
 
 We can see the format of sample data to pass the values to the data in the documentation.
 ```
@@ -138,7 +138,7 @@ In this blog, we will create a responsive pie chart using nivopie. we created a 
 
 If you like the content, pass it to your friends.
 
-For nivobar you can check out here  <a style="color: blue" href=" https://mdpuneethreddy.com/nivobar-responsive-bar-reactjs-and-typescript/
-">  https://mdpuneethreddy.com/nivobar-responsive-bar-reactjs-and-typescript/
+For nivobar you can check out here  <a style="color: blue" href="/blog/nivobar-responsive-bar-reactjs-and-typescript/
+">  https://mdpuneethreddy.com/blog/nivobar-responsive-bar-reactjs-and-typescript/
 </a>. 
-You can checkout articles   <a style="color: blue" href=" https://mdpuneethreddy.com/"> https://mdpuneethreddy.com</a>.
+You can checkout articles   <a style="color: blue" href="/"> https://mdpuneethreddy.com</a>.

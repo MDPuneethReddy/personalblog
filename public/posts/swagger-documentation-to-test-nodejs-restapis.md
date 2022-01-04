@@ -24,7 +24,7 @@ we can document swagger in 2 different ways,
 \*YAML<br />
 we can use any one formats to add documentation for the APIs, Here we will discuss both the format of writing documentation, first we will setup the swagger and give example for the both styles.
 
-you can get complete code from my <a style="color: blue" href="https://github.com/MDPuneethReddy/swagger_node">https://github.com/MDPuneethReddy/swagger_node</a> , you can check out here.
+you can get complete code from my <a style="color: blue" href="https://github.com/MDPuneethReddy/swagger_node" target="_blank">https://github.com/MDPuneethReddy/swagger_node</a> , you can check out here.
 
 ## Swagger documentaion with JSON format:
 
@@ -98,4 +98,4 @@ I just commented out the json file to show the difference, here the difference i
 Here we have discussed how to install and setup the dependencies for the swagger documentation along with both formats with JSON and YAML for both typescript and javascript.
 
 If you like this article please share with your friends, if you want to see more technology blogs and projects please checkout the Blog .
-<a style="color: blue" href="https://mdpuneethreddy.com/">https://mdpuneethreddy.com/</a>
+<a style="color: blue" href="/">https://mdpuneethreddy.com/</a>

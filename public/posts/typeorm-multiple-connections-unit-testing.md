@@ -9,10 +9,10 @@ In this blog we are going to create multiple connections to work with. Here mult
 
 ### PREREQUISITES:
 \* Install Nodejs expressjs application up and running, if not checkout 
-<a style="color: blue" href="https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
+<a style="color: blue" href="/blog/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
 
 \* setup typeorm with express app with single connection, if not checkout 
-<a style="color: blue" href="https://mdpuneethreddy.com/crud-with-nodejs-expressjs-typeorm-postgres/">https://mdpuneethreddy.com/crud-with-nodejs-expressjs-typeorm-postgres/</a>
+<a style="color: blue" href="/blog/crud-with-nodejs-expressjs-typeorm-postgres/">https://mdpuneethreddy.com/blog/crud-with-nodejs-expressjs-typeorm-postgres/</a>
 
 ### INSTALL DATABASES:
 if you are using multiple databases, install in your project “pg” for postgres, “sqlite3” for sqlite which is memory database, you can checkout documentation <a style="color: blue" href="https://typeorm.io/#/" target="_blank">https://typeorm.io/#/</a>
@@ -82,7 +82,7 @@ getConnection() will takes one paramter , which is the name of the connection i.
 ```
 const usersRepository = getConnection("development").getRepository(users);
 ```
-Here the first connection name is development, so typeorm will take care to connect with the corresponding database. The complete CRUD operations for this example is<a style="color: blue" href=" https://mdpuneethreddy.com/crud-with-nodejs-expressjs-typeorm-postgres/"> https://mdpuneethreddy.com/crud-with-nodejs-expressjs-typeorm-postgres/</a>
+Here the first connection name is development, so typeorm will take care to connect with the corresponding database. The complete CRUD operations for this example is<a style="color: blue" href="/blog/crud-with-nodejs-expressjs-typeorm-postgres/"> https://mdpuneethreddy.com/blog/crud-with-nodejs-expressjs-typeorm-postgres/</a>
 , Now we will use the same example and we can do our CRUD operations using sqlite database.
 
 ### CRUD OPERATIONS FOR SQLITE:
@@ -156,4 +156,4 @@ connection.then(
 In this blog we see how we can create multiple connections with typeorm. We added sqlite and postgres databases for mutliple connections. Next we saw how getConnection() method will be used when multiple connections are added. When we change the connection name from development to test the code for CRUD operations works normally.
 
 If you like this article please share with your friends, if you want to see more technology blogs and projects please checkout the Blog .
-<a style="color: blue" href="https://mdpuneethreddy.com/">https://mdpuneethreddy.com/</a>
+<a style="color: blue" href="/">https://mdpuneethreddy.com/</a>

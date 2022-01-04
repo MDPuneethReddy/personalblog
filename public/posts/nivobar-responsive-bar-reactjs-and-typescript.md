@@ -150,8 +150,8 @@ To provide height to view and also not to extension of the graph. So we will pro
 ### CONCLUSION:
 In this blog, we will create a responsive bar chart using nivobar. we created a sample data accordingly to pass the values to generate the bar chart. We have created a responsive bar chart with a complete explanation and code.
 
-For nivopie you can check out here  <a style="color: blue" href="https://mdpuneethreddy.com/nivopie-responsive-pie-reactjs-and-typescript/
-"> https://mdpuneethreddy.com/nivopie-responsive-pie-reactjs-and-typescript/
+For nivopie you can check out here  <a style="color: blue" href="/blog/nivopie-responsive-pie-reactjs-and-typescript/
+"> https://mdpuneethreddy.com/blog/nivopie-responsive-pie-reactjs-and-typescript/
 </a>. 
-You can checkout articles   <a style="color: blue" href=" https://mdpuneethreddy.com/"> https://mdpuneethreddy.com</a>.
+You can checkout articles   <a style="color: blue" href="/"> https://mdpuneethreddy.com</a>.
 

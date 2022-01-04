@@ -11,10 +11,10 @@ So In this blog we will connect using ormconfig.ts file with multiple connection
 
 ### PREREQUISITES:
 
-\*create expressjs, nodejs API running locally, you can get complete setup steps <a style="color: blue" href="https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/</a><br />
+\*create expressjs, nodejs API running locally, you can get complete setup steps <a style="color: blue" href="/blog/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/</a><br />
 \*setup typeorm in expressjs, nodejs API, you will get complete guide 
-<a style="color: blue" href="https://mdpuneethreddy.com/blog/crud-with-nodejs-expressjs-typeorm-postgres/">https://mdpuneethreddy.com/blog/crud-with-nodejs-expressjs-typeorm-postgres/</a>.<br />
-\*you can test the APIs using swagger and postman, if you want to setup swagger, you will get complete setup<a style="color: blue" href="https://mdpuneethreddy.com/blog/swagger-documentation-to-test-nodejs-restapis/">https://mdpuneethreddy.com/blog/swagger-documentation-to-test-nodejs-restapis/</a>.<br />
+<a style="color: blue" href="/blog/crud-with-nodejs-expressjs-typeorm-postgres/">https://mdpuneethreddy.com/blog/crud-with-nodejs-expressjs-typeorm-postgres/</a>.<br />
+\*you can test the APIs using swagger and postman, if you want to setup swagger, you will get complete setup<a style="color: blue" href="/blog/swagger-documentation-to-test-nodejs-restapis/">https://mdpuneethreddy.com/blog/swagger-documentation-to-test-nodejs-restapis/</a>.<br />
 
 ### CREATE ORMCONFIG.TS FOR TYPEORM MULTIPLE CONNECTIONS:
 First we will create ormconfig.ts file in the root repository in the level of package.json file. Then we will Add multiple database connections with different names. As a result we can identify different connections using the unique names.
@@ -131,4 +131,4 @@ connection.then(
 
 Here In this blog, we have seen how to create multiple connections in ormconfig.ts, next In the multiple connections we gave unique names. We created a function connection to create a specific result as a result we can connect using create connection method with unique name. So we can create different connections and connect with different schemas easily.
 
-If you like this blog, please share with your friends, you can checkout <a style="color: blue" href="https://mdpuneethreddy.com">https://mdpuneethreddy.com</a>, for the content on technologies.
+If you like this blog, please share with your friends, you can checkout <a style="color: blue" href="/">https://mdpuneethreddy.com</a>, for the content on technologies.

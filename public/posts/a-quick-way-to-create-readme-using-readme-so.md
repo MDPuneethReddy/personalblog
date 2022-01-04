@@ -25,4 +25,4 @@ Get your content use the “Download” button at the top-right corner to get yo
 ### CONCLUSION:
 In this blog, we saw how readme.so will make the readme-files so easy without much effort. We saw how to get started and create and edit the readme file with complete explanations and examples.
 
-If you like the content please share it with your friends, You can check more technology blogs <a style="color: blue" href=" https://mdpuneethreddy.com"> https://mdpuneethreddy.com</a> 
+If you like the content please share it with your friends, You can check more technology blogs <a style="color: blue" href="/"> https://mdpuneethreddy.com</a> 

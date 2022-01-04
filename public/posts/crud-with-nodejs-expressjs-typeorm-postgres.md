@@ -291,4 +291,4 @@ Here we discussed how to add typeorm to RestAPI along with setup and complete co
 
 Next we connected typeorm, postgres with nodejs, express with CRUD operations with explanation and code.
 
-If you have liked this article please share with others, if you want to look more like these articles, please checkout my blog <a style="color: blue" href="https://mdpuneethreddy.com/">https://mdpuneethreddy.com/</a>
+If you have liked this article please share with others, if you want to look more like these articles, please checkout my blog <a style="color: blue" href="/">https://mdpuneethreddy.com/</a>

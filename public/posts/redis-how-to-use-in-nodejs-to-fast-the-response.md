@@ -8,9 +8,9 @@ slug: "redis-how-to-use-in-nodejs-to-fast-the-response.md"
 In this blog , we are going to show how redis is useful in nodejs backend applications where it helps in reduces the time taken to get the processed data, when to use redis should we use all the time or only in some cases, we will check it out with API calls with detailed explanation.
 
 PREREQUSITES:
-Install nodejs and expressjs application and make sure it working locally, if you didn’t install check out <a style="color: blue" href="https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
+Install nodejs and expressjs application and make sure it working locally, if you didn’t install check out <a style="color: blue" href="/blog/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
 
-Install redis and have some idea, if you are not familiar with redis check out <a style="color: blue" href="https://mdpuneethreddy.com/redis-what-is-redis-when-to-use-with-example/">https://mdpuneethreddy.com/redis-what-is-redis-when-to-use-with-example/</a>
+Install redis and have some idea, if you are not familiar with redis check out <a style="color: blue" href="/blog/redis-what-is-redis-when-to-use-with-example/">https://mdpuneethreddy.com/blog/redis-what-is-redis-when-to-use-with-example/</a>
 
 You can get complete code from my github repo <a style="color: blue" href="https://github.com/MDPuneethReddy/redis_nodejs" target="_blank">https://github.com/MDPuneethReddy/redis_nodejs</a>
  
@@ -44,7 +44,7 @@ import redis from "redis"
 
 After installing check that redis is installed in package.json, next import redis at main file of expressjs app
 
-next import axios in the main file and start your redis server, which you installed before, if not install from <a style="color: blue" href=" https://github.com/dmajkic/redis/downloads"> https://github.com/dmajkic/redis/downloads</a>.
+next import axios in the main file and start your redis server, which you installed before, if not install from <a style="color: blue" href=" https://github.com/dmajkic/redis/downloads" target="_blank"> https://github.com/dmajkic/redis/downloads</a>.
 ```
 Yarn add axios
 ```
@@ -179,4 +179,4 @@ Here in this blog we installed redis server and created a redis client in the ex
 
 If you like this, please share with your friends, if any suggestion to improve or any comments , please write down in the comments.
 
-If you are interested in more blogs like this, please check out my blogs <a style="color: blue" href="https://mdpuneethreddy.com/">https://mdpuneethreddy.com/</a>.
+If you are interested in more blogs like this, please check out my blogs <a style="color: blue" href="/">https://mdpuneethreddy.com/</a>.

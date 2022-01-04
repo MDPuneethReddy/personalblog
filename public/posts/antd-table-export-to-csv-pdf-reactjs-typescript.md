@@ -8,7 +8,7 @@ slug: "antd-table-export-to-csv-pdf-reactjs-typescript.md"
 We will export Antd table to csv and pdf using “react-csv” and “react-to-print”. We will use “react-csv” to export the Antd table to a CSV file. Next, we will use “react-to-print” to export and table to PDF file.
 
 ### CREATE ANTD TABLE:
-Check out the official documentation for Antd <a style="color: blue" href="https://ant.design/">https://ant.design/</a> . Add antd dependency
+Check out the official documentation for Antd <a style="color: blue" href="https://ant.design/" target="_blank">https://ant.design/</a> . Add antd dependency
 ```
 yarn add antd
 ```
@@ -236,10 +236,10 @@ const myList=[
     )
 }
 ```
-Check out<a style="color: blue" href=" https://www.npmjs.com/package/react-to-print"> https://www.npmjs.com/package/react-to-print</a> <a style="color: blue" href="https://www.npmjs.com/package/react-csv">https://www.npmjs.com/package/react-csv</a>  ,  documentations.
+Check out<a style="color: blue" href=" https://www.npmjs.com/package/react-to-print" target="_blank"> https://www.npmjs.com/package/react-to-print</a>,  <a style="color: blue" href="https://www.npmjs.com/package/react-csv" target="_blank">https://www.npmjs.com/package/react-csv</a>  ,  documentations.
 
 
 ### CONCLUSION:
 In this blog, we have created an table and we use “react-csv” to export the table to the CSV file. We used “react-to-print” to export antd table to PDF file in Reactjs functional component using typescript and useRef hook with complete code and explanation.
 
-If you like the content please share it with your friends, You can check more technology blogs here<a style="color: blue" href=" https://mdpuneethreddy.com"> https://mdpuneethreddy.com</a> 
+If you like the content please share it with your friends, You can check more technology blogs here<a style="color: blue" href="/"> https://mdpuneethreddy.com</a> 

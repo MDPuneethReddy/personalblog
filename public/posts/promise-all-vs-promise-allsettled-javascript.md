@@ -7,7 +7,7 @@ slug: "promise-all-vs-promise-allsettled-javascript"
 ---
 When we are working with promises in Javascript, They are different approaches to do the promises. A most popular way to use Async/await. But there will be some times where we want to get the data or responses parallelly. We already know that javascript is “single-threaded”. So we will see how to make the responses fast by using “Promise.all” and “Promise.allSettled”.
 
-Please follow the link to know the differences between “Async/await” & “Promise.all” <a style="color: blue" href="https://mdpuneethreddy.com/how-to-manage-multiple-requests-with-promise-all/">https://mdpuneethreddy.com/how-to-manage-multiple-requests-with-promise-all/</a>
+Please follow the link to know the differences between “Async/await” & “Promise.all” <a style="color: blue" href="/blog/how-to-manage-multiple-requests-with-promise-all/">https://mdpuneethreddy.com/blog/how-to-manage-multiple-requests-with-promise-all/</a>
  . We saw when to use “Promise.all” and how it works with detailed explanation with pros and cons.
 
 So in this article, we will create a function that will get the response from the open API. We will see how both will work with pros and cons.
@@ -157,5 +157,5 @@ You can check about “Promise.all” and “Promise.allSettled”
 In this article, we saw how “Promise.all” & “Promise.allSettled” works and differences between them with complete code. We also saw how the response will be when the promise is rejected.
 
 If you like this article, please share it with others. If you are interested in different technologies please check out here
-<a style="color: blue" href="https://mdpuneethreddy.com">https://mdpuneethreddy.coms</a>
+<a style="color: blue" href="/">https://mdpuneethreddy.com</a>
 

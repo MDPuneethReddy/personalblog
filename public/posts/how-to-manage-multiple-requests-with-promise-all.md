@@ -60,10 +60,10 @@ So we will call both the functions and check the time difference. It may vary wi
 time taken for promise.all 288
 time taken with one by one  513
 ```
-you can check out articles on different technologies and tools here <a style="color: blue" href=" https://mdpuneethreddy.com/"> https://mdpuneethreddy.com</a>
+you can check out articles on different technologies and tools here <a style="color: blue" href="/"> https://mdpuneethreddy.com</a>
 
 
 ### CONCLUSION:
 In this article, we saw how “promise.all” helps to manage multiple calls faster. We also saw the advantages and also disadvantages, when to use and when not to use with complete examples and results.
 
-If you like this article, please share it with your friends and check articles on different technologies and tools here <a style="color: blue" href=" https://mdpuneethreddy.com/"> https://mdpuneethreddy.com</a>.
+If you like this article, please share it with your friends and check articles on different technologies and tools here <a style="color: blue" href="/"> https://mdpuneethreddy.com</a>.

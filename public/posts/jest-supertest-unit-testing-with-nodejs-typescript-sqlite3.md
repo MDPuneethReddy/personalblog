@@ -9,7 +9,7 @@ slug: "jest-supertest-unit-testing-with-nodejs-typescript-sqlite3"
 In this article, we will see how to add automated unit testing for Nodejs backend applications with typescript using jest and supertest. And also complete guide to adding SQLite to the backend server with CRUD operations.
 
 ### PREREQUISITES:
-Nodejs-expressjs server running locally. If you don’t have, please check out <a style="color: blue" href="https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
+Nodejs-expressjs server running locally. If you don’t have, please check out <a style="color: blue" href="/blog/expressjs-how-to-start-with-nodejs-and-expressjs/">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
  
 
 ### OBJECTIVES:
@@ -18,7 +18,7 @@ Nodejs-expressjs server running locally. If you don’t have, please check out <
 \* CRUD operations for SQLite<br />
 \* Examples of status codes and Error Handling<br />
 \* Unit testing with jest and supertest and complete setup<br />
-you can check out complete code<a style="color: blue" href="https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest">https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest</a>
+you can check out complete code<a style="color: blue" href="https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest" target="_blank">https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest</a>
   here.
 
 ### INITIAL NODEJS-SERVER:
@@ -102,7 +102,7 @@ app.use("/api/users",usersRouter)
 \* When the query is executed, if we get an error we will send status as 400 and with a message.<br />
 To test the endpoints you can use postman or if you are using VScode, you can use this extension called thunder-client which is similar to the postman.
 
-You can check out here <a style="color: blue" href=" https://mdpuneethreddy.com/thunder-client-vscode-extension-over-postman/"> https://mdpuneethreddy.com/thunder-client-vscode-extension-over-postman/</a>
+You can check out here <a style="color: blue" href="/blog/thunder-client-vscode-extension-over-postman/"> https://mdpuneethreddy.com/blog/Thunder-client-vscode-extension-over-postman/</a>
 
 ```
 import * as express from "express"
@@ -333,10 +333,10 @@ describe("test users endpoints",()=>{
 ### CONCLUSION:
 In this article, we have seen how to add SQLite database to nodejs server, CRUD operations for the users’ table. Setup jest and supertest for unit testing the endpoints, Added tests for endpoints with complete explanation and code.
 
-You can checkout complete code <a style="color: blue" href="https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest">https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest</a>
+You can checkout complete code <a style="color: blue" href="https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest" target="_blank">https://github.com/MDPuneethReddy/sqlite_nodejs_jest_supertest</a>
   here.
 
 If you like this, please share it with the others.
 
-If you want to check out the articles on different technology stacks, please check out here <a style="color: blue" href="https://mdpuneethreddy.com/">https://mdpuneethreddy.com/</a>
+If you want to check out the articles on different technology stacks, please check out here <a style="color: blue" href="/">https://mdpuneethreddy.com/</a>
  

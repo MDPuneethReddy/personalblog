@@ -11,9 +11,9 @@ Jest is one of the popular unit testing frameworks. Mocking the functions and mo
 \* Install Node<br />
 \* Setup Jest<br />
 
-you can checkout jest setup and unit testing with supertest, jest<a style="color: blue" href="https://mdpuneethreddy.com/jest-supertest-unit-testing-with-nodejs-typescript-sqlite3/">https://mdpuneethreddy.com/jest-supertest-unit-testing-with-nodejs-typescript-sqlite3/</a> here
+you can checkout jest setup and unit testing with supertest, jest<a style="color: blue" href="/blog/jest-supertest-unit-testing-with-nodejs-typescript-sqlite3/">https://mdpuneethreddy.com/jest-supertest-unit-testing-with-nodejs-typescript-sqlite3/</a> here
 
-you can check nodejs, expressjs app <a style="color: blue" href=" https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/"> https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
+you can check nodejs, expressjs app <a style="color: blue" href="/blog/expressjs-how-to-start-with-nodejs-and-expressjs/"> https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs/</a>
  here.
 
 ### OBJECTIVES:
@@ -212,5 +212,5 @@ describe("mock default module",()=>{
 ### CONCLUSION:
 In this Blog, we have a look into the difference between named export and default exports. How to mock named functions, modules. We check how to mock Axios with single, multiple requests and check how to mock default imports with complete code and explanation.
 
-If you like the article, please share it with your friends. You can check out articles on different technologies <a style="color: blue" href=" https://mdpuneethreddy.com/"> https://mdpuneethreddy.com/</a>
+If you like the article, please share it with your friends. You can check out articles on different technologies <a style="color: blue" href="/"> https://mdpuneethreddy.com/</a>
  here.

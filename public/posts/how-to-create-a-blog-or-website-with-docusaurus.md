@@ -17,9 +17,9 @@ To create your own pages, the personal website mainly for blogs and documentatio
 3.Add your components<br />
 4.Deploy the website in Netlify<br />
 
-you can check out complete code <a style="color: blue" href=" https://github.com/MDPuneethReddy/docusaurus_tutuorial">  https://github.com/MDPuneethReddy/docusaurus_tutuorial</a>.
+you can check out complete code <a style="color: blue" href=" https://github.com/MDPuneethReddy/docusaurus_tutuorial" target="_blank">  https://github.com/MDPuneethReddy/docusaurus_tutuorial</a>.
 
-you can check out the live website <a style="color: blue" href="  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/">  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/</a>  .
+you can check out the live website <a style="color: blue" href="  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/" target="_blank">  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/</a>  .
 
 ### INSTALL DOCUSAURUS AND CREATE A WEBSITE:
 First open your command prompt, next we will create a new website name “docusaurus-tutuorials” using the below command.
@@ -89,7 +89,7 @@ items: [
       ],
 ```
 
-If you are struggling to write with markdown, to make it easy you can check out the tool “readme.so“. you can check this article, how the tool works <a style="color: blue" href=" https://mdpuneethreddy.com/a-quick-way-to-create-readme-using-readme-so/">  https://mdpuneethreddy.com/a-quick-way-to-create-readme-using-readme-so/
+If you are struggling to write with markdown, to make it easy you can check out the tool “readme.so“. you can check this article, how the tool works <a style="color: blue" href="/blog/a-quick-way-to-create-readme-using-readme-so/">  https://mdpuneethreddy.com/blog/a-quick-way-to-create-readme-using-readme-so/
 </a>
 
 ### ADD REACT COMPONENTS IN DOCUSAURUS:
@@ -145,13 +145,13 @@ If the Build command is missing give “yarn build” and click on deploy site. 
 
 If you want to change the name of your website then you can change the site name in “site settings” or you can provide your custom domain to your website.
 
-You can check out the tutorial website <a style="color: blue" href="  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/ ">  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/ </a> .
+You can check out the tutorial website <a style="color: blue" href="  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/ " target="_blank">  https://docusaurus-tutorials-mdpuneethreddy.netlify.app/ </a> .
 
-You can check out the complete code for the above steps in my GitHub repository <a style="color: blue" href="https://github.com/MDPuneethReddy/docusaurus_tutuorial"> https://github.com/MDPuneethReddy/docusaurus_tutuorial</a>  .
+You can check out the complete code for the above steps in my GitHub repository <a style="color: blue" href="https://github.com/MDPuneethReddy/docusaurus_tutuorial" target="_blank"> https://github.com/MDPuneethReddy/docusaurus_tutuorial</a>  .
 
 ### CONCLUSION:
 In this article, we have seen how to create a new website with docusaurus, how to make changes to the website, how to add plugins, and how to add multiple categories for the blog pages.
 
 Next, we also saw how to add react components inside markdown and the guide for how to deploy the website to Netlify.
 
-If you like this article, please share it with your friends. You can check out articles on different technologies <a style="color: blue" href=" https://mdpuneethreddy.com"> https://mdpuneethreddy.com</a> 
+If you like this article, please share it with your friends. You can check out articles on different technologies <a style="color: blue" href="/"> https://mdpuneethreddy.com</a> 

@@ -154,4 +154,4 @@ export const FormExample:React.FC<Iprops>=(props:Iprops)=>{
 In this blog, we saw how to use React-hook-form in react functional components. We checked how to add validations and error handling with complete code and explanation. We also saw to add validation errors to frontend and also add function to console log the errors.
 
 
-If you like the content please share it with your friends, You can check more technology blogs here<a style="color: blue" href=" https://mdpuneethreddy.com"> https://mdpuneethreddy.com</a>
+If you like the content please share it with your friends, You can check more technology blogs here<a style="color: blue" href="/"> https://mdpuneethreddy.com</a>

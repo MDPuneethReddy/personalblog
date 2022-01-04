@@ -23,7 +23,7 @@ We can see above as it will store or cache the data and also it supports differe
 so we can use this functionality when the parameters to process to get the data don’t change frequently, if it don’t change frequently, we can cache the data or store the data in some structure to reuse again, so here comes Redis server.
 
 ### SETUP REDIS SERVER ON WINDOWS
-you can download this windows version form <a style="color: blue" href="https://github.com/dmajkic/redis/downloads">https://github.com/dmajkic/redis/downloads</a>.
+you can download this windows version form <a style="color: blue" href="https://github.com/dmajkic/redis/downloads" target="_blank">https://github.com/dmajkic/redis/downloads</a>.
 
 Download the zip and extract the folder, you can see 2 files in it redis.server and redis.client, open both the applications
 
@@ -193,4 +193,4 @@ hdel to delete the key from the hashmap
 Here we have seen what is redis, what is the use of using this redis-server and redis-client , how to setup redis both client and server and workout on some basic commands.
 
 If you like this article please share with your friends, if you want to see more technology blogs and projects please checkout the Blog .
-<a style="color: blue" href="https://mdpuneethreddy.com/">https://mdpuneethreddy.com/</a>
+<a style="color: blue" href="/">https://mdpuneethreddy.com/</a>

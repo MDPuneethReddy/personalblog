@@ -104,4 +104,4 @@ That’s it for the blog, if you have any questions write down below
 Here in this blog, we learnt how to Start our own backend server locally using expressjs, nodejs.
 
 
-If you like this article, please share it with your friends and check articles on different technologies and tools here <a style="color: blue" href=" https://mdpuneethreddy.com/"> https://mdpuneethreddy.com</a>.
+If you like this article, please share it with your friends and check articles on different technologies and tools here <a style="color: blue" href="/"> https://mdpuneethreddy.com</a>.
