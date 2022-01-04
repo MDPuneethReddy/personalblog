@@ -5,9 +5,9 @@ excerpt: "To test our API we will use Thunder Client extension which can takes o
 tags:  ["THUNDER-CLIENT","POSTMAN"]
 slug: "Thunder-client-vscode-extension-over-postman"
 ---
-To test our APIs we will use the postman or we will use swagger UI documentation. Most of the time we will use Postman to test our functionality. But you need to open the postman again to test your APIs. Now we don’t need to open the postman anymore, there is a new Thunder client extension that is more like the postman. you can check the official <a style="color: blue" href="https://github.com/rangav/thunder-client-support">https://github.com/rangav/thunder-client-support</a> 
+To test our APIs we will use the postman or we will use swagger UI documentation. Most of the time we will use Postman to test our functionality. But you need to open the postman again to test your APIs. Now we don’t need to open the postman anymore, there is a new Thunder client extension that is more like the postman. you can check the official <a style="color: blue" href="https://github.com/rangav/thunder-client-support" target="_blank">https://github.com/rangav/thunder-client-support</a> 
 
-If you want to test with swagger, you can check the setup <a style="color: blue" href="https://mdpuneethreddy.com/swagger-documentation-to-test-nodejs-restapis/">https://mdpuneethreddy.com/swagger-documentation-to-test-nodejs-restapis/</a> .
+If you want to test with swagger, you can check the setup <a style="color: blue" href="https://mdpuneethreddy.com/blog/swagger-documentation-to-test-nodejs-restapis/">https://mdpuneethreddy.com/blog/swagger-documentation-to-test-nodejs-restapis/</a> .
 
 ### INSTALL THUNDER CLIENT:
 <Image src="/images/posts/Thunder-client-vscode-extension-over-postman_img1.png">

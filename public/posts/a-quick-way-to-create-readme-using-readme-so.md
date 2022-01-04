@@ -7,7 +7,7 @@ slug: "a-quick-way-to-create-readme-using-readme-so"
 ---
 For every project, you may want to create a ReadMe file about your project. If you want to create blog posts using markup language or for any other purposes, readme.so make our job easy. This blog will see how we can write the markup or readme file easily without much effort.
 
-Go to the<a style="color: blue" href=" https://readme.so/">  https://readme.so/</a>  page, click on get started, and see the editor.
+Go to the<a style="color: blue" href=" https://readme.so/" target="_blank">  https://readme.so/</a>  page, click on get started, and see the editor.
 <Image src="/images/posts/a-quick-way-to-create-readme-using-readme-so_img1.png">
 
 The Left side panel is about the individual helpers for writing the markup. The middle panel is about the content to edit and you can see the preview in the right panel. It will resemble the same as the GitHub readme file.

@@ -17,7 +17,7 @@ You cant add a nodemailer package to the frontend. It is a node package.
    \* local running server<br />
 
 You can check out the articles here for the above prerequisites:
-<a style="color: blue" href="https://mdpuneethreddy.com/expressjs-how-to-start-with-nodejs-and-express">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-express</a>.
+<a style="color: blue" href="/blog/expressjs-how-to-start-with-nodejs-and-expressjs">https://mdpuneethreddy.com/blog/expressjs-how-to-start-with-nodejs-and-expressjs</a>.
 
 ### OBJECTIVES:
 
@@ -132,9 +132,9 @@ transporter.sendMail(mailOptions,  (err, info)=> {
 In this article, we had seen how to add email functionality in the Nodejs application using the Nodemailer package. Then we also saw how to test the email using mailtrap. If you like this article please share it with others.
 
 You can also check out articles on different technologies
-<a style="color: blue" href="https://mdpuneethreddy.com">https://mdpuneethreddy.com</a> .
+<a style="color: blue" href="/">https://mdpuneethreddy.com</a> .
 
 I added the email functionality in one of my React. You can check out the complete code from
-<a style="color: blue" href="https://github.com/MDPuneethReddy/twoWayAuthentication_nodemailer_reactjs/blob/main/server/index.ts">https://github.com/MDPuneethReddy/twoWayAuthentication_nodemailer_reactjs/blob/main/server/index.ts</a>
+<a style="color: blue" href="https://github.com/MDPuneethReddy/twoWayAuthentication_nodemailer_reactjs/blob/main/server/index.ts" target="_blank">https://github.com/MDPuneethReddy/twoWayAuthentication_nodemailer_reactjs/blob/main/server/index.ts</a>
 
 
